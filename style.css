@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 500px;
+    margin: 100px auto auto;
+    /* border: 2px solid black; */
+}
+
+.maker {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#inputToDo {
+    width: 80%;
+}
+
+#add {
+    width: 20%;
+}
+
+.toDoList {
+    width: 500px;
+}
+
+.toDoItem{
+    display: flex;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+.toDoName{
+    width: 80%;
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+.deleteToDo{
+    width: 20%;
+}
