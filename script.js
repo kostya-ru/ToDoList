@@ -13,6 +13,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 itemName = document.createElement('div'),
                 deleteItem = document.createElement('button');
             toDoItem.classList.add('toDoItem');
+            toDoItem.classList.add('fade');
             itemName.classList.add('toDoName');
             deleteItem.classList.add('deleteToDo');
             deleteItem.textContent = 'Зачеркнуть!';
@@ -36,16 +37,20 @@ window.addEventListener('DOMContentLoaded', function () {
             element.textContent = 'Удалить!';
             event.stopPropagation();
             element.addEventListener("click", function (event) {
-                element.parentElement.remove();
+                element.parentElement.classList.remove('fade');
+                element.parentElement.classList.add('fadeAway');
+                setTimeout(() => {
+                    element.parentElement.remove();    
+                }, 250);
                 event.stopPropagation();
             });
         });
     }
     add.addEventListener('click', addToDoItem);
 
-        inputToDo.addEventListener("keypress", (keyPressed) => {
+    inputToDo.addEventListener("keypress", (keyPressed) => {
         const keyEnter = 13;
-        if (keyPressed.which == keyEnter) {
+        if (keyPressed.which === keyEnter) {
             addToDoItem();
         }
     });
