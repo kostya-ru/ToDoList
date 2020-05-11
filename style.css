@@ -5,7 +5,8 @@
 }
 
 .container {
-    width: 500px;
+    width: 95%;
+    max-width: 700px;
     margin: 100px auto auto;
     /* border: 2px solid black; */
 }
@@ -17,14 +18,14 @@
 }
 
 #inputToDo {
-    width: 78%;
+    width: 75%;
     font-size: 1.2em;
     border: none;
     border-bottom: 1px solid #6399e6;
 }
 
 #add, .deleteToDo {
-    width: 18%;
+    width: 22%;
     border: none;
     color: white;
     background-color: #6399e6;
@@ -38,7 +39,8 @@
 }
 
 .toDoList {
-    width: 500px;
+  width: 100%;
+  max-width: 700px;
 }
 
 .toDoItem{
@@ -49,13 +51,13 @@
     justify-content: space-evenly;
 }
 .toDoName{
-    width: 78%;
-    text-align: center;
+    width: 75%;
+    text-align: left;
     border-bottom: 1px solid #6399e6;
 }
 
 .deleteToDo{
-    width: 18%;
+    width: 22%;
 }
 
 .fade {
